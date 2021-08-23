@@ -12,7 +12,7 @@
 			},
 			"keyVaultName": {
 				"type": "string",
-				"defaultValue": "https://kvcontgq76cqtk7bjwpoc.vault.azure.net/"
+				"defaultValue": "kvcontgq76cqtk7bjwpoc"
 			},
 			"SQLLoginUsername": {
 				"type": "string",
