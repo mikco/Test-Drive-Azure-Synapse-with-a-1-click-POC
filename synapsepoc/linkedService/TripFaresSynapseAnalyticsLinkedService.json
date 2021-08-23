@@ -3,20 +3,16 @@
 	"properties": {
 		"parameters": {
 			"SynapseWorkspaceName": {
-				"type": "string",
-				"defaultValue": "contgq76cqtk7bjwpocws1.database.windows.net"
+				"type": "string"
 			},
 			"SQLDedicatedPoolName": {
-				"type": "string",
-				"defaultValue": "contgq76cqtk7bjwpocws1p1"
+				"type": "string"
 			},
 			"keyVaultName": {
-				"type": "string",
-				"defaultValue": "kvcontgq76cqtk7bjwpoc"
+				"type": "string"
 			},
 			"SQLLoginUsername": {
-				"type": "string",
-				"defaultValue": "contgq76cqtk7bjwpocws1"
+				"type": "string"
 			}
 		},
 		"annotations": [],
