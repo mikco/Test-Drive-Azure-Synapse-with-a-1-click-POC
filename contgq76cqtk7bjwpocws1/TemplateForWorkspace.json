@@ -327,7 +327,7 @@
 					},
 					"SQLDedicatedPoolName": {
 						"type": "string",
-						"defaultValue": "contgq76cqtk7bjwpocws1"
+						"defaultValue": "contgq76cqtk7bjwpocws1p1"
 					},
 					"SQLLoginUsername": {
 						"type": "string",
@@ -837,21 +837,7 @@
 				"annotations": [],
 				"type": "AzureSqlDW",
 				"typeProperties": {
-					"connectionString": "[parameters('TripFaresSynapseAnalyticsLinkedService_connectionString')]",
-					"password": {
-						"type": "AzureKeyVaultSecret",
-						"store": {
-							"referenceName": "keyVaultLinkedservice",
-							"type": "LinkedServiceReference",
-							"parameters": {
-								"keyVaultName": {
-									"value": "@linkedService().keyVaultName",
-									"type": "Expression"
-								}
-							}
-						},
-						"secretName": "synapseSqlLoginPassword"
-					}
+					"connectionString": "[parameters('TripFaresSynapseAnalyticsLinkedService_connectionString')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -859,8 +845,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]",
-				"[concat(variables('workspaceId'), '/linkedServices/keyVaultLinkedservice')]"
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
 			]
 		},
 		{
